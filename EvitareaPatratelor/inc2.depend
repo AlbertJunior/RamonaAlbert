@@ -1,0 +1,41 @@
+# depslib dependency file v1.0
+1544596097 source:f:\work\info\inc2\main.cpp
+	<iostream>
+	<graphics.h>
+	<winbgim.h>
+	<cstdlib>
+	"Initializari.h"
+	"Functii.h"
+
+1544595956 f:\work\info\inc2\initializari.h
+
+1544600111 f:\work\info\inc2\functii.h
+
+1546460847 source:c:\users\diana\desktop\inc2\main.cpp
+	<iostream>
+	<graphics.h>
+	<winbgim.h>
+	<cstdlib>
+	<windows.h>
+	<mmsystem.h>
+	"Initializari.h"
+	"Functii.h"
+
+1546205801 c:\users\diana\desktop\inc2\initializari.h
+
+1546460653 c:\users\diana\desktop\inc2\functii.h
+
+1546602807 source:d:\inc2\main.cpp
+	<iostream>
+	<graphics.h>
+	<winbgim.h>
+	<cstdlib>
+	<windows.h>
+	<mmsystem.h>
+	"Initializari.h"
+	"Functii.h"
+
+1546602987 d:\inc2\initializari.h
+
+1546602699 d:\inc2\functii.h
+
