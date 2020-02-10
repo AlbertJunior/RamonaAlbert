@@ -1,0 +1,108 @@
+# VirtualSoc by Albert Ramona-Georgiana
+
+**VirtualSoc** este o aplicatie care simuleaza o retea sociala.
+
+
+## Fisiere necesare
+Pentru crearea fisierelor **client.bin** si **server.bin** sunt necesare fisiere:
+ - client.c
+ - server.c
+ - Makefile
+ - bazedate.h
+ - functii.h
+ - bazanotificari.h
+
+Pentru utilizarea aplicatiei ca si **client** este necesar doar fisierul **client.bin**.
+Pentru utilizarea aplicatiei ca si **server** sunt necesare fisierele:
+ - server.bin
+ - virtualSoc.db
+
+## Comenzi disponibile
+Pentru a crea fisierele **server.bin** si **client.bin** se poate utiliza comanda **make debug**
+Pentru rularea **clientului** se poate utiliza comanda **make run2**
+Pentru rularea **serverului** se poate utiliza comanda **make run1**
+
+
+## Cum utilizam aplicatia ca si client
+Dupa ce rulam comanda **make run2**, severul ne va trimite mesajul de bun venit si ne va recomanda comanda **man** pe tot parcusul utilizarii aplicatiei ca indrumare. 
+Acesta va afisa urmatorul meniu:
+1. login
+2. signup
+3. search
+4. man
+5. quit
+
+Pentru a  alege o optiune putem scrie **cifra** corespunzatoare sau chiar **cuvantul** respectiv. In caz ca trimitem alt mesaj, serverul ne va cere alt raspuns.
+Odata logati , vom dispune de urmatorul meniu:
+
+1. logout
+2. search
+3. notificari
+4. posteaza
+5. noutati
+6. friends
+7. create_chat
+8. chat
+9. delete_me
+10. man
+
+Optiunea **search** ne permite sa cautam o persoana dupa nume, prenume sau amandoua. Aceasta cautare nu este case sensitive. 
+Optiunea **notificari** ne transmite toate notificarile necitite pana in acel moment, din cauza ca am fost offline.
+Optiunea **posteaza** ne va permite sa postam o stire, un mesaj si sa-l indreptam spre un grup de prieteni (apropiati, departati, prieteni, public).
+Optiunea **noutati** ne va trimite sa alegem:
+1. cereri
+2. postari
+
+Acestea ne vor permite raspunderea la cererile de prietenie, si sa vizualizam postarile indreptate noua.
+
+Optiunea **friends** ne va permite sa vizualizam prietenii, in special cei online.
+Optiunea **create_chat** ne va permite sa cream un nou chat in care vom fi admini.
+Optiunea **chat** ne va afisa o lista cu toate chat-urile din care facem parte, cerandu-ne sa alegem unul in care vrem sa intram.
+Optiunea **delete_me** va sterge permanent contul, dar nu inainte ne a ne intreba daca suntem siguri.
+
+
+## Chat
+
+Odata intrati intr-un chat, utilizand comanda **man**, vom vizualiza urmatorul meniu:
+1. add_friend
+2. delete_friend
+3. istoric
+4. users
+5. leave_chat
+6. rename
+7. back
+8. *orice alt mesaj va fi trimis celorlalti*
+
+Optiunea numarul **8** semnifica faptul ca in caz ca nu introducem o comanda din cele de mai sus, acesta se va transmite ca mesaj celorlati din chat. In caz ca o persoana nu este intrata in chat, aceasta va fi anuntata ca s-a postat un nou mesaj pe chat-ul respectiv.
+Optiunea **add_friend** poate fi utilizata de orice participant la conv. Aceasta deschide o lista cu toti prietenii utilizatorului.
+Optiunea **delete_friend** poate fi utilizata doar de catre adminul conversatiei.
+Optiunea **istoric** permite citirea mesajelor din ultimele **n** zile.
+Iesirea cu optiunea **back** va anunta pe toti cei intrati in chat ca ati parasit conversatia.
+
+
+## Client *admin*
+
+Ca si admin se adauga urmatoarele optiuni:
+1. users
+2. trimite_anunt
+3. delete_user
+4. check
+5. conversatii
+
+Acesta este singurul care poate vizualiza username-ul fiecarei persoane inregistrate folosind comanda **users**.
+
+El poate trimite un anunt, unei anumite persoane, sau tuturor utilizatorului folosind comanda **trimite_anunt**.
+Prin comanda **check**, el va putea citi postarile, mesajele si notificarile fiecarui individ.
+Prin urmare, el poate sterge o persoana **delete_user**
+De asemenea, poate citi orice conversatie **conversatii**, alegand una din lista afisata. 
+
+## Server
+
+Prin comanda **make run1** se va porni serverul care va astepta intr-o bucla infinita clienti care sa se conecteze. Acesta lucreaza concurent.
+
+
+## Contact
+Pentru intrebari, ma puteti contacta pe contul meu de VirtualSoc. Ma puteti adauga la prieteni, dand un **search** Albert Ramona. Puteti crea un chat cu comanda **create_chat** si sa ma adaugati. Eu voi primi notificare ca am fost adaugata intr-un chat si va voi raspunde.
+
+Sau pe **mail**: albert.ramona99@gmail.com  
+  
